@@ -1,4 +1,5 @@
 import Cards from "@/components/dashboard/Cards";
+import ProjectsTable from "@/components/dashboard/ProjectsTable";
 import RecentActivity from "@/components/dashboard/RecentActivity";
 import RecentProjects from "@/components/dashboard/RecentProjects";
 import TakeAction from "@/components/dashboard/TakeAction";
@@ -15,6 +16,7 @@ export default function Dashboard() {
         <RecentProjects />
         <UsageChart />
         <RecentActivity />
+        <ProjectsTable />
     </div>
   )
 }
