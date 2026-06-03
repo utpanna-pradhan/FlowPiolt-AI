@@ -5,6 +5,7 @@ import ProjectsTable from "@/components/dashboard/ProjectsTable";
 import RecentActivity from "@/components/dashboard/RecentActivity";
 import RecentProjects from "@/components/dashboard/RecentProjects";
 import TakeAction from "@/components/dashboard/TakeAction";
+import TeamMember from "@/components/dashboard/TeamMember";
 import UpcommingTask from "@/components/dashboard/UpcommingTask";
 import UsageChart from "@/components/dashboard/UsageChart";
 import Welcome from "@/components/dashboard/Welcome";
@@ -23,6 +24,7 @@ export default function Dashboard() {
         <AIInsights />
         <AssistantWidget />
         <UpcommingTask />
+        <TeamMember />
     </div>
   )
 }
