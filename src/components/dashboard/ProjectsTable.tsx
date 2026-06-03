@@ -54,7 +54,7 @@ export default function ProjectsTable() {
                 <button className="text-sm font-medium text-indigo-600 hover:text-indigo-700">View All</button>
             </div>
 
-            <div className="overflow-auto">
+            <div className="overflow-x-auto">
                 <table className="w-full">
                     <thead>
                         <tr className="border-b border-slate-200">
