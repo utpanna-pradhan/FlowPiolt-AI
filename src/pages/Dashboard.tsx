@@ -1,9 +1,11 @@
 import AIInsights from "@/components/dashboard/AIInsights";
 import AssistantWidget from "@/components/dashboard/AssistantWidget";
 import Cards from "@/components/dashboard/Cards";
+import NotificationCenter from "@/components/dashboard/NotificationCenter";
 import ProjectsTable from "@/components/dashboard/ProjectsTable";
 import RecentActivity from "@/components/dashboard/RecentActivity";
 import RecentProjects from "@/components/dashboard/RecentProjects";
+import SubscriptionUsage from "@/components/dashboard/SubscriptionUsage";
 import TakeAction from "@/components/dashboard/TakeAction";
 import TeamMember from "@/components/dashboard/TeamMember";
 import UpcommingTask from "@/components/dashboard/UpcommingTask";
@@ -25,6 +27,8 @@ export default function Dashboard() {
         <AssistantWidget />
         <UpcommingTask />
         <TeamMember />
+        <SubscriptionUsage />
+        <NotificationCenter />
     </div>
   )
 }
