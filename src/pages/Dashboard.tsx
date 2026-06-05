@@ -1,4 +1,5 @@
 import AIInsights from "@/components/dashboard/AIInsights";
+import AIRecommendation from "@/components/dashboard/AIRecommendation";
 import AssistantWidget from "@/components/dashboard/AssistantWidget";
 import Cards from "@/components/dashboard/Cards";
 import NotificationCenter from "@/components/dashboard/NotificationCenter";
@@ -29,6 +30,7 @@ export default function Dashboard() {
         <TeamMember />
         <SubscriptionUsage />
         <NotificationCenter />
+        <AIRecommendation />
     </div>
   )
 }

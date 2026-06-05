@@ -7,24 +7,28 @@ export default function NotificationCenter() {
             description:"Weekly performance report is ready",
             time:"2 min ago",
             unread:true,
+            icon:Sparkles,
         },
         {
             title:"Workflow Completed",
             description:"Marketing automation finished sucessfuly",
             time:"1 hour ago",
             unread:true,    
+            icon:CheckCircle2,
         },
         {
             title:"Emma Joined Workspace",
             description:"A new member joined your team",
             time:"3 hours ago",
             unread:false,
+            icon:Users
         },
         {
             title:"AI Recommendation Available",
             description:"New optimization suggestions are ready",
             time:"Yesterday",
             unread:false,
+            icon:Bell
         },
     ];
   return (
@@ -47,7 +51,31 @@ export default function NotificationCenter() {
         {notification.map((notification)=>{
             const Icon  = notification.icon;
             return(
-                <div key={notification.title} className="group flex items-center gap-4">
+                <div key={notification.title} className="group flex items-center gap-4 rounded-2xl border border-slate-100 p-4 transition-all duration-300 hover:border-indigo-100 hover:bg-slate-50 hover:shadow-sm">
+
+                    {/*Unread dot */}
+                    {notification.unread && (
+                        <div className="mt-2 h-2.5 w-2.5 rounded-full bg-indigo-600"/>
+                    )}
+
+                    {/*Icon */}
+                    <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+                        <Icon size={20} />
+                    </div>
+
+                    {/*Content*/}
+                    <div className="flex-1">
+                        <div className="flex items-center justify-between">
+                            <h3 className="font-medium text-slate-900">{notification.title}</h3>
+
+                            <span className="text-xs text-slate-400">
+                                {notification.time}
+                            </span>
+                        </div>
+                        <p className="text-sm mt-1 text-slate-500">
+                            {notification.description}
+                        </p>
+                    </div>
                 </div>
             )
         })}
