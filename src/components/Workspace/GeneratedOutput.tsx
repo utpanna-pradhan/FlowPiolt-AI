@@ -36,21 +36,23 @@ export default function GeneratedOutput() {
                 </pre>
             </div>
 
-            <div>
-                <div>
+            <div className="mt-6 flex flex-col gap-4 lg:flex-row lg:items-c lg:justify-between">
+                <div className="flex items-center gap-4 text-sm text-slate-500">
                     <span>1,450 words</span>
                     <span></span>
                     <span>Generated 2 mins ago</span>
                 </div>
-                <div>
-                    <button>
-                        <Copy />
+                <div className="flex flex-wrap gap-3">
+                    <button className="flex items-center gap-2 rounded-2xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600 transition-all hover:border-indigo-200
+                    hover:text-indigo-600 hover:bg-indigo-50">
+                        <Copy size={16} />
+                        Copy
                     </button>
-                    <button >
-                        <Save />
+                    <button  className="flex items-center gap-2 rounded-2xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600 transition-all hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-600">
+                        <Save  size={16}/> Save
                     </button>
-                    <button>
-                        <Download />
+                    <button className="flex items-center gap-2 rounded-2xl bg-indigo-600 px-5 py-2 text-sm font-medium text-white transition-all hover:bg-indigo-700">
+                        <Download  size={16}/>Download
                     </button>
                 </div>
             </div>
