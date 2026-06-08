@@ -1,11 +1,10 @@
+import Hero from "@/components/Analytics/Hero";
 
 
 export default function Analytics() {
   return (
-    <div>
-      <h1 className="text-2xl font-semibold">
-        Analytics
-      </h1>
+    <div className="space-y-8">
+    <Hero />
     </div>
   )
 }
