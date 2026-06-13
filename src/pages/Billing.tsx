@@ -1,11 +1,12 @@
+import Hero from "@/components/Billing/Hero";
+import SpendRIver from "@/components/Billing/SpendRIver";
 
 
 export default function Billing() {
   return (
     <div>
-      <h1 className="text-2xl font-semibold">
-        Billing
-      </h1>
+     <Hero />
+     <SpendRIver />
     </div>
   )
 }
