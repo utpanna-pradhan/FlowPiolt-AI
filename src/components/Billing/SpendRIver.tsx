@@ -100,7 +100,7 @@ export default function SpendRIver() {
 
                             <div className="relative">
 
-                                <div className="h-8 overflow-hidden rounded-full border border-slate-100 bg-slate-50">
+                                <div className="h-4 overflow-hidden rounded-full border border-slate-100 bg-slate-50">
 
                                     <div
                                         style={{
@@ -119,7 +119,7 @@ export default function SpendRIver() {
 
                                         {/* river endpoint */}
 
-                                        <div className="absolute right-0 top-1/2 h-8 w-9 -translate-y-1/2 rounded-full bg-white/30 backdrop-blur-xl" />
+                                        <div className="absolute right-0 top-1/2 h-4 w-5 -translate-y-1/2 rounded-full bg-white/30 backdrop-blur-xl" />
 
                                     </div>
 
