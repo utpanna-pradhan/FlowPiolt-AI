@@ -1,9 +1,12 @@
+import Hero from "@/components/Settings/Hero";
+import WorkspaceStatus from "@/components/Settings/WorkspaceStatus";
 
 
 export default function Settings() {
   return (
-    <div>
-      <h1 className="text-2xl font-semibold">Settings</h1>
-    </div>
+   <div className="space-y-8">
+      <Hero />
+      <WorkspaceStatus />
+   </div>
   )
 }
