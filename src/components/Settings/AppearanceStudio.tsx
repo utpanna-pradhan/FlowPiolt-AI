@@ -95,16 +95,16 @@ export default function AppearanceStudio() {
                 </div>
 
                 <div className="rounded-[40px] border border-slate-200 bg-white/80 p-8 backdrop-blur-xl">
-                    <div className="flex items-center gap-3">
+                    <div className="flex items-center gap-3  mb-8">
                         <SlidersHorizontal />
                         Controls
                     </div>
-                    <div>
+                    <div className="mb-8">
                         {themes.map((item)=>{
                             const Icon = item.icon
                             return(
-                                <button key={item.name} className={`w-full rounded-[28px] border p-6 text-left transition ${item.activity ? "border-indigo-500 bg-indigo-50" : "border-slate-200"}`}>
-                                    <div className="flex justify-between">
+                                <button key={item.name} className={`w-full mb-8 rounded-[28px] border p-6 text-left transition ${item.activity ? "border-indigo-500 bg-indigo-50" : "border-slate-200"}`}>
+                                    <div className="flex justify-between " >
                                         <div>
                                             <div className="flex h-14 w-14 items-center justify-center rounded-3xl bg-slate-900 text-white">
                                                 <Icon />
