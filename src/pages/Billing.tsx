@@ -1,4 +1,4 @@
-import BillingIntelligence from "@/components/Billing/BillingIntelligence";
+// import BillingIntelligence from "@/components/Billing/BillingIntelligence";
 import BillingTimeline from "@/components/Billing/BillingTimeline";
 import CostGuard from "@/components/Billing/CostGuard";
 import CostSimulator from "@/components/Billing/CostSimulator";
@@ -22,7 +22,7 @@ export default function Billing() {
      <InvoiceConverter />
      <CostGuard />
      <CostSimulator />
-     <BillingIntelligence />
+     {/* <BillingIntelligence /> */}
     </div>
   )
 }
